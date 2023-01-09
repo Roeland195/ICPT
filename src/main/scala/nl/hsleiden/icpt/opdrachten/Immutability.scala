@@ -13,12 +13,8 @@ object Immutability {
    * @param n
    * @return
    */
-    @tailrec def faculty(n: Int, res: Int = 1): Int = {
-    if (n == 1) {
-      res
-    } else {
-      faculty(n - 1, res * n)
-    }
+  def faculty(n: Int): Int = {
+    ???
   }
 
   /**
@@ -29,7 +25,7 @@ object Immutability {
    * @return
    */
   def pow(lh: Int, rh: Int): Double = {
-    if (rh == 0) 1 else lh * pow(lh, rh - 1)
+    ???
   }
 
 }

@@ -21,11 +21,7 @@ object DataTypes {
    * @param dieren => De lijst met dieren
    * @return Hoeveelheid honden die hierin zitten
    */
-  @tailrec def hoeveelheidHonden(dieren: Seq[Dier], resultaat: Int = 0): Int = dieren match {
-    case Seq() => resultaat
-    case Hond(_,_,_)::tail => hoeveelheidHonden(tail, resultaat + 1)
-    case _::tail => hoeveelheidHonden(tail, resultaat)
-  }
+  def hoeveelheidHonden(dieren: Seq[Dier]): Int = ???
 
   /**
    * Tel hoeveel honden er in het lijstje zitten die 1 zijn.
@@ -33,23 +29,14 @@ object DataTypes {
    * @param dier
    * @return
    */
-  @tailrec def hoeveelHeidHondenZijnEen(dier: Seq[Dier], resultaat: Int = 0): Int = dier match {
-    case Seq() => resultaat
-    case Hond(_, _, 1)::tail => hoeveelHeidHondenZijnEen(tail, resultaat + 1)
-    case _::tail => hoeveelHeidHondenZijnEen(tail, resultaat)
-
-  }
+  def hoeveelHeidHondenZijnEen(dier: Seq[Dier]) : Int = ???
 
   /**
    * Tel de totale leeftijd van alle honden op.
    * @param dier
    * @return
    */
-  def totaleLeeftijdHonden(dier:Seq[Dier]): Int = dier match {
-    case Seq() => 0
-    case Hond(_,_, d)::tail => d + totaleLeeftijdHonden(tail)
-    case _::tail => totaleLeeftijdHonden(tail)
-  }
+  def totaleLeeftijdHonden(dier:Seq[Dier]): Int = ???
 
   /**
    * Reken de leeftijd van alle labradors bij elkaar!
@@ -58,11 +45,7 @@ object DataTypes {
    * @param resultaat
    * @return
    */
-  @tailrec def totaleLeeftijdLabradors(dier: Seq[Dier], resultaat: Int = 0): Int = dier match {
-    case Seq() => resultaat
-    case Hond(_, "Labrador", d) :: tail => totaleLeeftijdLabradors(tail, resultaat + d)
-    case _ :: tail => totaleLeeftijdLabradors(tail, resultaat)
-  }
+  def totaleLeeftijdLabradors(dier: Seq[Dier]): Int = ???
 }
 
 

@@ -1,6 +1,5 @@
 package nl.hsleiden.icpt.opdrachten
 
-import nl.hsleiden.icpt.helper.Assertions.{assertEither, assertOption}
 
 object ExceptionHandling {
 
@@ -12,7 +11,7 @@ object ExceptionHandling {
    * @return
    */
   def division(lh: Int, rh: Int): Either[String, Int] = {
-    if (rh == 0) Left("Kan niet delen door nul") else Right( lh / rh)
+    ???
   }
 
   /**
@@ -24,7 +23,7 @@ object ExceptionHandling {
    */
   def divisionAddOne(lh: Int, rh: Int): Either[String, Int] = {
     // Gebruik hier de map functor. https://www.geeksforgeeks.org/scala-map-method/
-    division(lh, rh).map(_ + 1)
+    ???
   }
 
   /**
@@ -35,7 +34,7 @@ object ExceptionHandling {
    * @return
    */
   def appendHi(name: String): Either[String,String] = {
-    if (name.equals("")) Left("Naam is leeg") else Right(f"hallo ${name}")
+    ???
   }
 
 
@@ -47,7 +46,7 @@ object ExceptionHandling {
    */
   def doeAppendHiMetToUpper(name: String): Either[String, String] = {
     // Hier heb je de functor map voor nodig
-    appendHi(name).map(_.toUpperCase)
+    ???
   }
 
   /**
@@ -60,11 +59,11 @@ object ExceptionHandling {
    * @return
    */
   def maakNegatief(n: Int): Option[Int] = {
-    if (n > 0) Some(-n) else None
+    ???
   }
 
   def maakNegatiefAppend1(n: Int): Option[Int] = {
-    maakNegatief(n).map(_ + 1)
+    ???
   }
 
 }

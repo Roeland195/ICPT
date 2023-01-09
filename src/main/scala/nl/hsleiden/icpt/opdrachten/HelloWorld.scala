@@ -13,7 +13,7 @@ object HelloWorld {
    * @return
    */
   def appendHi(name: String): String = {
-    f"hallo $name"
+    ???
   }
 
   /**
@@ -25,7 +25,7 @@ object HelloWorld {
    * @return
    */
   def maakNegatief(n: Int): Int = {
-   if (n > 0) -n else n
+   ???
   }
 
   /**
@@ -38,7 +38,7 @@ object HelloWorld {
    * @return
    */
   def maakPositief(n: Int): Int = {
-    if (n < 0) -n else n
+    ???
   }
 
   /**
@@ -50,6 +50,6 @@ object HelloWorld {
    * @return
    */
   def vermenigvuldigGeenNul(lh: Int, rh: Int): Int = {
-    if (lh == 0 || rh == 0) 1 else lh * rh
+    ???
   }
 }
