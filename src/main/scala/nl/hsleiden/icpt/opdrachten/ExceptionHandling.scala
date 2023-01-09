@@ -1,7 +1,5 @@
 package nl.hsleiden.icpt.opdrachten
 
-import nl.hsleiden.icpt.helper.Assertions.{assertEither, assertOption}
-
 object ExceptionHandling {
 
   /**
