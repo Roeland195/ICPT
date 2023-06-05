@@ -43,6 +43,6 @@ class FunctorTests extends AnyFlatSpec with should.Matchers{
   }
 
   "DoubleDivision" should "Right terug geven met het antwoord" in {
-    DoubleDivision(9, 2) should be(Right(5))
+    DoubleDivision(9, 2) should be(Right(2))
   }
 }

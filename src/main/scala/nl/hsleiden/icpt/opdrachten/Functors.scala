@@ -16,7 +16,7 @@ object Functors {
    * @return
    */
   def DoubleDivision(lh: Int, rh: Int): Either[String, Int] = {
-    division(lh, rh).flatMap(division(lh, _))
+    ???
   }
 
 
@@ -30,7 +30,7 @@ object Functors {
    */
   def divisionAddOne(lh: Int, rh: Int): Either[String, Int] = {
     // Gebruik hier de map functor. https://www.geeksforgeeks.org/scala-map-method/
-    division(lh, rh).map(_ + 1)
+    ???
   }
 
   /**
@@ -41,11 +41,11 @@ object Functors {
    * @return
    */
   def doubleAppendHi(name: String): Either[String, String] = {
-    appendHi(name).flatMap(appendHi)
+    ???
   }
 
   def maakNegatiefAppend1(n: Int): Option[Int] = {
-    maakNegatief(n).map(_ + 1)
+    ???
   }
 
   /**
@@ -57,7 +57,7 @@ object Functors {
    */
   def doeAppendHiMetToUpper(name: String): Either[String, String] = {
     // Hier heb je de functor map voor nodig
-    appendHi(name).map(_.toUpperCase)
+    ???
   }
 
 }
