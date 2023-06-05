@@ -14,18 +14,6 @@ object ExceptionHandling {
   }
 
   /**
-   * Voer de bovenstaande divisie methode uit.
-   * Incrementeer dit resultaat  met 1
-   * @param lh
-   * @param rh
-   * @return
-   */
-  def divisionAddOne(lh: Int, rh: Int): Either[String, Int] = {
-    // Gebruik hier de map functor. https://www.geeksforgeeks.org/scala-map-method/
-    division(lh, rh).map(_ + 1)
-  }
-
-  /**
    * Maak de functie af.
    * Geef terug hallo <naam>
    * Indien naam leeg is (""). Geef een error mee
@@ -37,16 +25,6 @@ object ExceptionHandling {
   }
 
 
-  /**
-   * Doe de appendHi en doe dan daarna gelijk toUpperCase.
-   * Gebruik hier de map functor voor.
-   * @param name
-   * @return
-   */
-  def doeAppendHiMetToUpper(name: String): Either[String, String] = {
-    // Hier heb je de functor map voor nodig
-    appendHi(name).map(_.toUpperCase)
-  }
 
   /**
    * Maak de functie af.
@@ -61,8 +39,6 @@ object ExceptionHandling {
     if (n > 0) Some(-n) else None
   }
 
-  def maakNegatiefAppend1(n: Int): Option[Int] = {
-    maakNegatief(n).map(_ + 1)
-  }
+
 
 }
