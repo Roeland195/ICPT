@@ -1,4 +1,4 @@
-import nl.hsleiden.icpt.opdrachten.Functors.{divisionAddOne, doeAppendHiMetToUpper, doubleAppendHi, maakNegatiefAppend1}
+import nl.hsleiden.icpt.opdrachten.Functors.{DoubleDivision, divisionAddOne, doeAppendHiMetToUpper, doubleAppendHi, maakNegatiefAppend1}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
@@ -39,10 +39,10 @@ class FunctorTests extends AnyFlatSpec with should.Matchers{
 
 
   "DoubleDivision" should "Left geven met fout 'Kan niet delen door nul' bij delen door nul " in {
-    divisionAddOne(1, 0) should be(Left("Kan niet delen door nul"))
+    DoubleDivision(1, 0) should be(Left("Kan niet delen door nul"))
   }
 
   "DoubleDivision" should "Right terug geven met het antwoord" in {
-    divisionAddOne(9, 2) should be(Right(5))
+    DoubleDivision(9, 2) should be(Right(2))
   }
 }
