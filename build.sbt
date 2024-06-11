@@ -9,6 +9,6 @@ lazy val root = (project in file("."))
     name := "ICPT_les",
     libraryDependencies ++= Seq(
       "org.scalactic" %% "scalactic" % "3.2.18",
-      "org.scalatest" %% "scalatest" % "3.2.17" % "test"
+      "org.scalatest" %% "scalatest" % "3.2.18" % "test"
     )
   )
