@@ -13,8 +13,8 @@ object Immutability {
    * @param n
    * @return
    */
-  def faculty(n: Int): Int = {
-    ???
+  def faculty(n: Int, rest : Int = 1): Int = {
+    if (n == 0 ) res else faculty(n*(n-1))
   }
 
   /**

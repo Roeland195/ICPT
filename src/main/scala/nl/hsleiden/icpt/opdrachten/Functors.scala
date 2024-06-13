@@ -41,13 +41,11 @@ object Functors {
    * @return
    */
   def doubleAppendHi(name: String): Either[String, String] = {
-    ???
+    ExceptionHandling.appendHi(name).flatMap(appendHi)
   }
 
-  def maakNegatiefAppend1(n: Int): Option[Int] = {
-    ???
-  }
-
+  def maakNegatiefAppend1(n: Int): Option[Int] =
+    maakNegatief(n).map(_+1)
   /**
    * Doe de appendHi en doe dan daarna gelijk toUpperCase.
    * Gebruik hier de map functor voor.

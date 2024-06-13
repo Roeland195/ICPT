@@ -21,22 +21,25 @@ object DataTypes {
    * @param dieren => De lijst met dieren
    * @return Hoeveelheid honden die hierin zitten
    */
-  def hoeveelheidHonden(dieren: Seq[Dier]): Int = ???
-
+  def hoeveelheidHonden(dieren: Seq[Dier]): Int = dieren match
+    case Hond::tail => 1 + hoeveelheidHonden(tail)
+    case _::tail => hoeveelheidHonden(tail)
   /**
    * Tel hoeveel honden er in het lijstje zitten die 1 zijn.
    *
    * @param dier
    * @return
    */
-  def hoeveelHeidHondenZijnEen(dier: Seq[Dier]) : Int = ???
-
+  def hoeveelHeidHondenZijnEen(dier: Seq[Dier]) : Int = dieren match
+    case Hond(_,_,1)::tail => + hoeveelHeidHondenZijnEen(tail)
+    case _::tail => hoeveelHeidHondenZijnEen(tail)
   /**
    * Tel de totale leeftijd van alle honden op.
    * @param dier
    * @return
    */
-  def totaleLeeftijdHonden(dier:Seq[Dier]): Int = ???
+  def totaleLeeftijdHonden(dier:Seq[Dier], Int: int): Int = dieren match
+    case Hond::tail => int + totaleLeeftijdHonden()
 
   /**
    * Reken de leeftijd van alle labradors bij elkaar!

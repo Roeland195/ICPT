@@ -34,7 +34,8 @@ object ExceptionHandling {
    * @return
    */
   def appendHi(name: String): Either[String,String] = {
-    ???
+    case "" => Left("Naam is leeg")
+    case _ => Right(f"Hallo $name")
   }
 
 
